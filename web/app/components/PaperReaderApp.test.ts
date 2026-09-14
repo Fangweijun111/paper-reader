@@ -3,6 +3,12 @@ import { describe, expect, it } from "vitest";
 import { teachAndGrowMentoredReportMarkdown } from "../data/papers/teach-and-grow/report";
 
 describe("PaperReaderApp image lightbox integration", () => {
+  it("connects report Markdown images to the same accessible lightbox", () => {
+    const source = readFileSync("app/components/PaperReaderApp.tsx", "utf8");
+    expect(source).toContain("img: ({ src, alt })");
+    expect(source).toContain('alt || "报告图片"');
+    expect(source.match(/onOpenImage=\{setActiveImage\}/g)).toHaveLength(2);
+  });
   it("makes figure thumbnails accessible buttons and mounts one shared lightbox", () => {
     const source = readFileSync("app/components/PaperReaderApp.tsx", "utf8");
     expect(source).toContain("onOpenImage");

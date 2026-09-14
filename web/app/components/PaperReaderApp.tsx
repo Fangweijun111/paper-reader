@@ -208,10 +208,12 @@ function ReportContent({
   markdown,
   onJump,
   evidenceTargets,
+  onOpenImage,
 }: {
   markdown: string;
   onJump: (target: string) => void;
   evidenceTargets: Record<string, string>;
+  onOpenImage: (image: LightboxImage) => void;
 }) {
   return (
     <div className="markdown report-markdown">
@@ -220,6 +222,16 @@ function ReportContent({
         remarkPlugins={[remarkGfm, remarkMath]}
         rehypePlugins={[rehypePaperMathCompatibility, [rehypeKatex, paperMathOptions]]}
         components={{
+          img: ({ src, alt }) => typeof src === "string" && src ? (
+            <button
+              type="button"
+              className="paper-block__figure"
+              aria-label={`放大查看：${alt || "报告图片"}`}
+              onClick={() => onOpenImage({ src, alt: alt || "报告图片" })}
+            >
+              <img src={src} alt={alt || "报告图片"} />
+            </button>
+          ) : null,
           h2: ({ children }) => {
             const label = plainText(children);
             const number = label.match(/^(\d+)\./)?.[1];
@@ -772,7 +784,8 @@ export function PaperReaderApp({
             ))}
           </div>
           <div className="report-scroll" ref={reportScrollRef}>
-            <ReportContent
+              <ReportContent
+                onOpenImage={setActiveImage}
               evidenceTargets={evidenceTargets}
               markdown={enrichedReportMarkdown}
               onJump={jumpToPaper}
