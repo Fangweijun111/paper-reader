@@ -1,0 +1,53 @@
+name: Publish Paper Atlas frontend
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: read
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - uses: actions/configure-pages@v5
+      - run: npm ci
+      - run: node ../scripts/check-public-release.mjs
+      - run: npm test
+      - run: npm run typecheck
+      - name: Export static reader
+        run: npm run build
+        env:
+          PAPER_ATLAS_STATIC_EXPORT: "1"
+          NEXT_PUBLIC_BASE_PATH: /paper-reader
+      - name: Validate all exported routes and public assets
+        run: node ../scripts/check-pages-export.mjs
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: web/dist/client
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy reader
+        id: deployment
+        uses: actions/deploy-pages@v4

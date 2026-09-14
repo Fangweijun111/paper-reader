@@ -11,7 +11,7 @@ import {
   useState,
 } from "react";
 import Link from "next/link";
-import ReactMarkdown from "react-markdown";
+import ReactMarkdown, { defaultUrlTransform } from "react-markdown";
 import rehypeKatex from "rehype-katex";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
@@ -45,6 +45,9 @@ import { contentRights } from "../data/content-rights";
 import { mentorGuides } from "../data/mentor-guides";
 import { formatPublicationLabel } from "../lib/library";
 import { appendChapterMentorNotes } from "../lib/mentor-notes";
+import { withBasePath } from "../lib/site-url";
+
+const markdownUrlTransform = (url: string) => withBasePath(defaultUrlTransform(url));
 
 type Props = {
   paperMeta: ReaderPaperMeta;
@@ -132,6 +135,7 @@ function Markdown({
   return (
     <div className={`markdown ${className}`}>
       <ReactMarkdown
+        urlTransform={markdownUrlTransform}
         remarkPlugins={[remarkGfm, remarkMath]}
         rehypePlugins={[rehypePaperMathCompatibility, [rehypeKatex, paperMathOptions]]}
       >
@@ -156,7 +160,7 @@ function PaperBlockView({
   onPin: (id: string) => void;
   onOpenImage: (image: LightboxImage) => void;
 }) {
-  const imageSrc = block.imageSrc;
+  const imageSrc = block.imageSrc ? withBasePath(block.imageSrc) : undefined;
   return (
     <article
       className={`paper-block paper-block--${block.kind}${
@@ -212,6 +216,7 @@ function ReportContent({
   return (
     <div className="markdown report-markdown">
       <ReactMarkdown
+        urlTransform={markdownUrlTransform}
         remarkPlugins={[remarkGfm, remarkMath]}
         rehypePlugins={[rehypePaperMathCompatibility, [rehypeKatex, paperMathOptions]]}
         components={{
@@ -527,7 +532,7 @@ export function PaperReaderApp({
           <button onClick={() => jumpToReport("report-11")} type="button">
             复现
           </button>
-          <a href={paperMeta.pdfHref} target="_blank" rel="noreferrer">
+          <a href={withBasePath(paperMeta.pdfHref)} target="_blank" rel="noreferrer">
             PDF ↗
           </a>
         </nav>

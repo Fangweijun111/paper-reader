@@ -18,6 +18,7 @@ import {
   toggleReadPaper,
 } from "../lib/read-papers";
 import { CreatePaperDialog } from "./CreatePaperDialog";
+import { withBasePath } from "../lib/site-url";
 
 const statusMeta: Record<
   PaperStatus,
@@ -149,7 +150,7 @@ function PaperCard({
           <footer className="library-card__footer">
             <span>更新于 {paper.updatedAt}</span>
             {paper.href ? (
-              <a href={paper.href}>
+              <a href={withBasePath(paper.href)}>
                 {status.action} <span aria-hidden="true">↗</span>
               </a>
             ) : (
@@ -197,7 +198,7 @@ function PaperCard({
             {paper.href ? (
             <a
               aria-label={`进入 ${paper.titleEn} 精读页面`}
-              href={paper.href}
+              href={withBasePath(paper.href)}
             >
               再读一遍 <span aria-hidden="true">↗</span>
             </a>
