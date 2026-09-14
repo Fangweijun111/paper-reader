@@ -170,4 +170,3 @@ Reviewer 会质疑：LIBERO 增益只有 2 点且已有 92.4% 天花板；依赖
 **答案**：证明单任务 bounded memory 随积累提升并饱和；没证明跨任务、跨顺序的受控 lifelong scaling。
 ### 题 10：最低复现公平性要求是什么？
 **答案**：相同 checkpoint、初始状态、trajectory order 和预算，memory-on/off 多 seed 配对比较，并报告置信区间与污染失败。
-

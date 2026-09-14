@@ -258,4 +258,3 @@ Idea：不再均匀保存 10 万轨迹，而是估计哪些随机化/失败恢�
 
 ### 题 10：最小实验怎样证明域随机化有用？
 **答案**：在相同任务、示范数、模型和训练步数下，只改变 Clean vs Rand 预训练数据，并同时在 Clean/Easy 与 Randomized/Hard、最好再在真实 unseen+clutter 上报告 SR。
-

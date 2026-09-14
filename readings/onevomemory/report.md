@@ -94,4 +94,3 @@ $Q_t=E_\theta(o_t)$ 是冻结策略的动作查询；$C_t=Retrieve(Q_t,\mathcal 
 **答案**：无多轮曲线、seed/方差/显著性和逐模块消融。
 ### 题 10：公平纵向复现需什么？
 **答案**：固定底座与 rollout 顺序，多 seed 比较 memory frozen、online update 与无 memory。
-

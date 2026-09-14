@@ -1510,4 +1510,3 @@ factorizer 错误会污染检索；复杂检索可能增加延迟，并让简单
 不应进一步夸成：
 
 > 它已经解决了通用 self-evolving world model，或可靠地让所有 LLM agent 获得更强规划能力。
-

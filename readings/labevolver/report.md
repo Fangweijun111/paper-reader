@@ -106,4 +106,3 @@ RAG/memory agent：检索结构化实验经验进入上下文；test-time adapta
 **答案**：不训练；论文只说轨迹未来可用于 world model。
 ### 题 10：如何公平验证累积收益？
 **答案**：同任务顺序、同 backbone/token/步数，多 seed 比较 memory-on/off。
-

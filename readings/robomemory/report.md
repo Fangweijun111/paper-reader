@@ -244,4 +244,3 @@ for task in task_stream:
 
 ### 题 10：最小复现为何应先用仿真 action API？
 **答案**：这样可隔离 memory/planning 机制，不被昂贵且不稳定的低层 VLA 与真实硬件混淆。
-

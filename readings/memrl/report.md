@@ -509,4 +509,3 @@ task id、query、candidate ids、similarity、Q before/after、combined score�
 ### 题 10：最核心的局限是什么？
 
 **答案**：最终 reward 被粗略归因给所有注入 memory，且错误 verifier 会把错误经验推成高 Q；这同时影响学习效率与安全性。
-

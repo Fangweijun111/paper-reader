@@ -104,4 +104,3 @@ RAG：harness 做的是选择和组织轨迹证据，但同时是可执行代码
 **答案**：没有，只做一次小集 artifact acquisition 后固定评测。
 ### 题 10：公平复现要记录什么？
 **答案**：版本/parent hash、rollout、token、验证选择、held-out SR、seed 与 CI。
-

@@ -332,4 +332,3 @@ Idea：把触觉、力矩、规划器失败码和视觉反馈统一写进 Experi
 
 ### 题 10：验证“越用越强”最少还需要增加什么实验？
 **答案**：固定模型工具与预算，对多个任务顺序 permutation 和多个 seed 建立 checkpoint 曲线；报告 matched controls、置信区间、旧任务 retention、负检索，并做幂律与替代曲线的 held-out 比较。
-

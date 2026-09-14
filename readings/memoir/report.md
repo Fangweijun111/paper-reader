@@ -111,4 +111,3 @@ RAG：是结构化视觉/行为 RAG，但 query 来自未来想象；TTA：memor
 **答案**：Table V imagination 双库检索与 oracle 对照。
 ### 题 10：MVP 必须记录什么？
 **答案**：tour order、memory规模、检索 recall/accuracy、SR/SPL、latency/显存和多 seed。
-

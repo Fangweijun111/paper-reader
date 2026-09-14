@@ -684,4 +684,3 @@ final_result = evaluate_once(policy, harness, final_test)
 > **导师解读**：如果你能同时讲出“它新增了什么执行机制”“哪些对照已经做了”“还有哪些证据不够”，才算真正读懂。尤其不要为了自己的研究定位，把它已经有的累计曲线说成没有；也不要因为摘要分数高，就忽略长程弱点和统计口径疑问。
 
 阅读来源：[arXiv记录](https://arxiv.org/abs/2608.16590v1)、[全文HTML](https://arxiv.org/html/2608.16590v1)、[原始PDF](https://arxiv.org/pdf/2608.16590v1)、[作者项目页](https://air-embodied-brain.github.io/zetta/)、[官方代码](https://github.com/air-embodied-brain/Zetta-Embodiment)。原图、公式和原始表格均保留；图例和口径疑点没有被译者擅自修改。
-
