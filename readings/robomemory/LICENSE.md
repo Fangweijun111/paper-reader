@@ -1,0 +1,3 @@
+RoboMemory: A Brain-inspired Multi-memory Agentic Framework for Interactive Environmental Learning in Physical Embodied Systems — Lei et al. (2025). Source: https://arxiv.org/abs/2508.01415v7. License: CC-BY-NC-SA-4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/). Chinese translations and figure/table extraction are adaptations; no author endorsement is implied.
+
+官方 arXiv 摘要页的 view license 指向 CC BY-NC-SA 4.0。仅可在非商业使用、署名、保留原文与许可链接、说明翻译/裁切等改动，并让衍生材料继续采用 CC BY-NC-SA 4.0 的条件下收录。应对该论文目录单独标注许可，不能将全文、图表及译文统一改授 MIT/Apache-2.0，也不能移除 NC/SA 限制；若发布方案要求商业使用或统一宽松许可，则排除此材料。 当前读者使用的是 arXiv v7；不能拿较早会议版本的录用信息或未经核验的会议默认许可，覆盖此版本的 NC-SA 条款。

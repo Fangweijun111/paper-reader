@@ -1,0 +1,933 @@
+[
+  {
+    "path": "web/public/papers/openwam/assets/fig1.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 943909,
+    "sha256": "c60d2c83dc604bcd7b964ffab108b5e2a34561367e72bad2f8c7186a7c48b3f4"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig2.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 291231,
+    "sha256": "673eb97e74e9678929637bc0d2541de9ca60718c17a2043d790698eb0a6aae0a"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig3.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 152418,
+    "sha256": "a3a78a5f739d648882746c84b8bc264cd857e327e27c43881b1a2da89e6121ee"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig4.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 190073,
+    "sha256": "08d091ef776eebf91b61525d1a832ccede06c9e3d83ced7eac5d0353b4eddbe9"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig5.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 368581,
+    "sha256": "f5cd291528a7d7d3e9527d91b439e5376e8f9889abf94397d2325f42225ba399"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig6.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 195334,
+    "sha256": "3d547f3cd91185cfb8c9a0de09349133a4da6ffbfa4071dfeb70f67f7573f000"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig7.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 159966,
+    "sha256": "de3f5af73b50a8cc66c8e6705b6749e7e46cdab9c775943bfbfa9f86f0b9b42d"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table1.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 158569,
+    "sha256": "cf3a7d58ff05fc8c7879947a1fc687bbae7708e62e30852e6afbc3b63b8a516a"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig8.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 94395,
+    "sha256": "26119a0dbaafefbc2010433644ac0c05e16eb4c24ae3d075a782ec628042b337"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table2.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 128647,
+    "sha256": "1b2f9e2749bc3536c9fd298be9d0843321adfce52d0350ad5d0df89d1af612ee"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig9.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 377228,
+    "sha256": "00ca7eca89505b3b09682c6cc133933495c3ff2fee94a78ae1ca6ef052a6b16a"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig10.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 175716,
+    "sha256": "dff5ed94b8302a92e01554d9894137f3a92a4e2b53d43b185fa2de2c46ce8aa5"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig11.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 118545,
+    "sha256": "95f193f6d542ab2263246d68e15004aa325f21cb2bf736bac30fbe23aa98b6e6"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table3.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 119308,
+    "sha256": "af54cce43b85e29c7e26562ff15ce036b9c4ec32c99c9710cfc69728ed25dcd2"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig12.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 688835,
+    "sha256": "569a0750cbb20b8a2ebe0f0765410c850862177480f322b79a6ef37947813f9f"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table4.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 108114,
+    "sha256": "2c669685fb4186d4528e0de25e14ce8acc202848d523a0294d6b887f62abb503"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig13.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 396084,
+    "sha256": "8bdce66e46b2e75242e788a52e2c855d7e6560325f30276296348ade5460f0ea"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig14.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 550293,
+    "sha256": "3dfa4bb2d24eeddb0d6a057e50b78edb6fcd464d2eadbb1bbb59f1f94f31655f"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig15.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 711914,
+    "sha256": "4eaee5f6af35740fdb2bf575d7d6b4e113cafacdf1e56504c247e4db778382d2"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table5.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 277999,
+    "sha256": "6d78309fdfa6cf58704019eb108310af4be12ab162424d67c8de238da5bebdeb"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig16.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 297957,
+    "sha256": "6f3fd2681c13219ac61794017e9230e0e462493c96bd65e977bf1a471ded50b7"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig17.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 2585337,
+    "sha256": "ea0c332fe2951200942a6eb8fe02d2dda0f38e11e0dd639a794d9b1a5a8ccaee"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table6.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 80999,
+    "sha256": "722dc64910d6bdd1053e6595bf70a81001139e1309867966e8e64e741871ea4e"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table7.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 278002,
+    "sha256": "b16ce55fd93e82fa7057b1ed6b712ce8c91513326cdfdef7e0583ce7f2cc10ff"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table8.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 98427,
+    "sha256": "388f3ac68825bc61133c44d463d5918a3c3003559dc68e9f9f1134b8184badcf"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table9.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 221285,
+    "sha256": "3aac968f98d407b1d8e4281d67cde01d3f3fbe5a4f766569fa67b3d22a745303"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table10.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 219143,
+    "sha256": "085f8d54d372adb063d10aebe227bb102c8466eb713e8c8e8c8beeb8548cafeb"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table11.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 89134,
+    "sha256": "8073ab18f81f52f60a2ee32d0a18beeae35b8928ee7fcc25309b84be9069ae2b"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig18.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 2551778,
+    "sha256": "dd306d84b0c9349ba87eee6116885a6e30f2a9b6c99c8570cab1f2758c7b25da"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig19.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 4455051,
+    "sha256": "48906a15d5f0b2e774868ba949ffbdbe26f8f216cce53df7f8dcc44c07a8dc53"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table12.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 62215,
+    "sha256": "493ad41d999cca74a92a87d6d0458631529d64c97d217f6899ea61a2197fa797"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig20.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 10653597,
+    "sha256": "9b9f8a50bdfec671b530b46b1d6f2b68eb7da5d12e48d5f033e1d758e0d36754"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/fig21.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 3191285,
+    "sha256": "aa7dce89c8f5b265ad6f61aa49e8adb0f1ce07c78c19933c07f784130c6a4bdf"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table13.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 402259,
+    "sha256": "02331a29d817a27a6e090e6912a9ca28b031ebce52c130d1f135d0c7e829be4e"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table14.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 169688,
+    "sha256": "3cad80fcbc7cf08fa7d973a88b99f9735bf0c88e30a5ef64c669c570642619e5"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table15.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 319923,
+    "sha256": "2265b218d2f0b88122eea4b877d23d47410c2248141e7f2bdd1e588bdad264e7"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table16.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 342911,
+    "sha256": "2c362c8499937e108e41fbc760b86ed3d4a17370e85443f4742f7404fbd610c6"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table17.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 279595,
+    "sha256": "fea7eaa4f315cc32e453e587d1923b7f8f94abf1e5a674c1afc04cda106a5bf2"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table18.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 203135,
+    "sha256": "4ca105f7ff847569b9d1aa7524574371c6d463dc247b4dbe6516a4988e54665a"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table19.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 221107,
+    "sha256": "4ca95851ab581741b08b0b168874de740e214746cd7665dada2ed13282a87220"
+  },
+  {
+    "path": "web/public/papers/openwam/assets/table20.png",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 424580,
+    "sha256": "d460f1b369b5bca785eccec1804b7d0d0e21700d043dc51493f05790f293a500"
+  },
+  {
+    "path": "web/public/papers/openwam.pdf",
+    "slug": "openwam",
+    "license": "CC-BY-4.0",
+    "bytes": 2704103,
+    "sha256": "d53e9ecbe7267cad7f9e1d7a40e262600b2db4a034856fce620278a34c5792a4"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/fig1.png",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 508179,
+    "sha256": "b6325229336ee7a74a43142dfe6466beb2dbeee798531169c3dc3058a6502482"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/fig2.png",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 167069,
+    "sha256": "c51fbaac3220b828b5534e7b01569d92e7239a3017890b6477cc767d3f99410e"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/fig3.png",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 170796,
+    "sha256": "d3e35988ce6f0d33e9b5adc54cb2983ff21d45501852afb0832a3b531b511eed"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/table1.png",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 176259,
+    "sha256": "1058acabfdc5dc6895bb8ec8b30f3da0193a1c9960bd783ee29653f5b0823a1f"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/fig4.svg",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 105172,
+    "sha256": "bfb396fdd5a9f733dd4b2eaf5586903fe2ebb3d4873958933c182667913b090c"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/fig5.svg",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 93184,
+    "sha256": "412174696f0077cefe5bec11ea4b6ea3cdfb0fc99ead8fad36da3d3c65da75c5"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/fig6.png",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 94204,
+    "sha256": "c176ffaa4a67d8e168a44aad04eda3184456b6ea268341b33bfa99eefab585f3"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/fig7.png",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 511194,
+    "sha256": "ef39afce2391182aea2f5accd2c8cb45d5b23c0e9eb6d1e276f30caf6e97052b"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/fig8.png",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 606688,
+    "sha256": "5ad7be14bbcfec0e1b173f327a85cd103928d605f14702ca499517303a3363c8"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/fig9.svg",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 66630,
+    "sha256": "fd0ed96e0a997d9ec7116a79192307220179b4683aac2fcf07e0503a03c252da"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/fig10.png",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 632695,
+    "sha256": "c0c5bdcc76b750dffc0f7a8953f11d358b799e35b490638b599301219eac30d9"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/fig11.png",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 431335,
+    "sha256": "e14006eed973960d31e435685f41beeaf5bc83b79bdfc10a9f057a22a26be5d4"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/table2.png",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 42106,
+    "sha256": "b7b424af67c2849da73aa24be752e1e7695af1c3e6e24a33105ced36b3eebb6c"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/table3.png",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 65889,
+    "sha256": "13a980d92cc2e94bf89ce3a904fcfc22a41b89af8e0c835da9cb5860e31e90ce"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/fig12.png",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 1255050,
+    "sha256": "1e121786da40daf067a32c1feb9a5786430c0ff6b3b2f600675449ffd73f0931"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/fig13.png",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 1567425,
+    "sha256": "4f47996770a3a011ac92e8b61c81d5cbb3520b8499441ff6474b52e3b70572c4"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/fig14.svg",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 97798,
+    "sha256": "89dec18de02a041b604b2983b28232589059096cbaad8ea28b62dd42c0d5c2ec"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/fig15.svg",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 108899,
+    "sha256": "50f36f2b10245e5eda28905763a70861f2f07f11082077a528ff99dc3b8918c8"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/table4.png",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 78646,
+    "sha256": "1f0bbaa349d75d89e8ca4f11ff9afe3e6ef7aa244bd287b0ebad5519bb80b8d8"
+  },
+  {
+    "path": "web/public/papers/zetta/assets/table5.png",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 151726,
+    "sha256": "1587acfc59851c277d764026e51b9d9e38786ce93a50f52376efef8037ee4300"
+  },
+  {
+    "path": "web/public/papers/zetta.pdf",
+    "slug": "zetta",
+    "license": "CC-BY-4.0",
+    "bytes": 5103522,
+    "sha256": "00e89f549666c4b174eb66a8dd3a0edd6f45c6ec6393530eef8f21d45c6dfc18"
+  },
+  {
+    "path": "web/public/papers/world-ego-modeling/assets/fig1_teaser.webp",
+    "slug": "world-ego-modeling",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 221746,
+    "sha256": "2559c5fc88d38364c41358e0472199c52558fbeb61334a57c524801e8a8f6a84"
+  },
+  {
+    "path": "web/public/papers/world-ego-modeling/assets/fig7_views.webp",
+    "slug": "world-ego-modeling",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 189242,
+    "sha256": "2979bca55243fc2a13c9fe57be06de11c7af15fccc003355d0a06fdfab314230"
+  },
+  {
+    "path": "web/public/papers/world-ego-modeling/assets/fig2_framework.webp",
+    "slug": "world-ego-modeling",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 92284,
+    "sha256": "081604f71c1624d65e74789507a27a47cdbe28323acbd591692e6ad3628fc3db"
+  },
+  {
+    "path": "web/public/papers/world-ego-modeling/assets/fig3_model.webp",
+    "slug": "world-ego-modeling",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 180920,
+    "sha256": "b75cfd72a2458c317379a51d273eb504e8a34bf57b9c7865fd2c3aafd1d69d7f"
+  },
+  {
+    "path": "web/public/papers/world-ego-modeling/assets/fig5_dataset.webp",
+    "slug": "world-ego-modeling",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 460220,
+    "sha256": "be6f50ac5c09dea3e641a0dd68d9841b41d34a4391c166d0a99a4a849b94f6e3"
+  },
+  {
+    "path": "web/public/papers/world-ego-modeling/assets/fig4_quali_exp.webp",
+    "slug": "world-ego-modeling",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 664452,
+    "sha256": "e2c32a72fc2f77adcf26cfa45a7842c57085e32059422ab77b69ef1c9c718e7b"
+  },
+  {
+    "path": "web/public/papers/world-ego-modeling/assets/fig6_role_expert.webp",
+    "slug": "world-ego-modeling",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 385702,
+    "sha256": "5c2a0ded30b00bd60ed53c21342e291212081eec34ddc73271281512c2b4be28"
+  },
+  {
+    "path": "web/public/papers/world-ego-modeling.pdf",
+    "slug": "world-ego-modeling",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 6324355,
+    "sha256": "d02e593aa682f277e378b78d0528a3ce0cb6c3a4d2f8c777e7007650c4b22107"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x1.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 31898,
+    "sha256": "7ab50798bbee3a589eae92186a224beaf39fefad80ea1f2268f66dd6b9726533"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x2.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 63738,
+    "sha256": "7f3bd2c3b30bdcd7918c97ed0ea6fe8c4a49f65be5474548797745a6996f63b3"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x3.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 50302,
+    "sha256": "8924e1ef0e026dbd58dbb9a405a43c82bb116ccec673a9e905f83799b7a22bfe"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x4.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 31900,
+    "sha256": "6ff7657bb731e7f06fe7a7a97c2e0fd8ebc08dba125fb3ea812bd8e84e27bed3"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x5.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 28658,
+    "sha256": "aca1c0a746fc0eb7e18eb72057d90994cbac0bdb8e684413c7bfc2e102695575"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x6.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 26888,
+    "sha256": "d22965d2e2b085fcc87a3d9cbab9d0519db5d9c5d1c80dcd07faa56822635d99"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x7.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 38760,
+    "sha256": "8435e666b900cb947e689750d73146e76afc6a9e3d44fd962aee51a97a566548"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x8.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 30768,
+    "sha256": "bf38685e7dd09f11d299f7109596f1bb9118e28c68bd3834f47375c2740747d3"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x9.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 35226,
+    "sha256": "4e901e246f978c84f3037f349bc7cb9c251b1282bd6ad032f29b6de686d2b736"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x10.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 45988,
+    "sha256": "fb4601080cafd213bad43dfeaa6225fe8fc965fc6cd94d16519b602f39ce4477"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x11.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 50588,
+    "sha256": "18915a1093d0a796d645e66c05ff901fafad69dff75e695b72c41eb639892b70"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x12.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 14430,
+    "sha256": "84b47536bcbce79a7fb5adc7d9d017101afeef2f1ff2df5af7af08f24fcb8276"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/regret-x-start.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 26624,
+    "sha256": "a3a7b0b184c87fc97573e31ef001245e5a2414a7cba81d80d166d3edf02e0415"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/regret-x-goal.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 24246,
+    "sha256": "f28072cfe4ea0f8e9e512939594b25bfcbf5817d9ff2e3b716b244bf7f24751b"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x13.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 28612,
+    "sha256": "3129e8ec7a8b5676eabd2a544b813fe852894e7b560e32ae112b9d72984e59d2"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/regret-y-start.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 24664,
+    "sha256": "2e72a49981424ba104fe70d7830147761cd7a974809bdf4d81c2b52792a9e472"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/regret-y-goal.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 26538,
+    "sha256": "d3e3063b79942d7cc13e103eaf35943c53fb2cdb2059a6e5aeb065fe26a2b65f"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x14.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 33424,
+    "sha256": "e3945cdb2654d18cd8645e0b5aaa966658a623ad2f73191d8be2dcf935750262"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/regret-z-start.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 26330,
+    "sha256": "d5ab2a3faab74ff05092942b671619702ab3db2813393878b915bd30c811a93d"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/regret-z-goal.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 22782,
+    "sha256": "f5fa1b288e2a0d293ece27c69dff46f929e283505e3cf9d14708e30c7f7f3bd9"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x15.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 30840,
+    "sha256": "c151b52f6422e73fcc94ca2614e902623d709688616c1e7bf8740605adf1723d"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x16.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 48948,
+    "sha256": "0e7b344280bbc5fcdbd78c2cc54c8e31af8fe1b52e4b059d1bf73f36feae34c0"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/traj-pnp-0.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 174152,
+    "sha256": "bebf36a598d934b525909c0614efecaa04f13772b459ecd1fa805b5681004fd9"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/traj-pnp-2.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 111636,
+    "sha256": "b6b22ecedbe769a940b27b05a68cbf62d375d3917ef9bdcb25fb710ff242fc68"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/traj-pnp-1.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 162412,
+    "sha256": "9ef5f7a64642b0f7d348e3efbb9b394c8cf8423c7da40765bf12eddc6168adf3"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x17.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 24632,
+    "sha256": "0716d8a7e98339935edb86300fa3dac6992ce9034cf2ee9cc0c1d472051f783a"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x18.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 17996,
+    "sha256": "619230abe669be2fbb7b7f869357db930fee6d3388990992366d8e6e38564ef9"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x19.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 13092,
+    "sha256": "b366732cf00f14b5cb53ec4681586bdf9d5378fa4237eda40e9cbfae18b3a869"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/graspcup.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 229782,
+    "sha256": "dbdca1b684bb4e74ff9f932a3d2509bb941ba1d609a0df65a52b26acdae6be31"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/reachcup.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 233904,
+    "sha256": "60811b3013e6c3c865e9523688abecbb04c68a80f47a9d0ca50bbafb82298d4c"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/pnpcup.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 451210,
+    "sha256": "aceda441285193a144bebdb8fdeff2182fecc84060957577d98001cdcd691395"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/wm_grid_correction.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 63568,
+    "sha256": "fb6e681663245f611a966f60bb0aac86465e8e5d5a2454439289d627444f687f"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/wm_grid_open_close.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 32462,
+    "sha256": "f97e5eb32c80c94196aba670494d380eb6282842e5850171603d610947e4d537"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x20.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 26472,
+    "sha256": "95bf313eb5ed2c93d4fbf30c6c402df8f7288f33a6c299c8d5896de8aa87262b"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x21.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 32064,
+    "sha256": "b6ad47e9394f26a17b74b641c9c28403dc13b475afb31c6ff705edc6526c3791"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x22.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 29920,
+    "sha256": "6a330768613221310fa8cd9a8089303576fc47c78af6156e9e0aa99ad52a3275"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x23.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 25828,
+    "sha256": "229ea001df6cd3b9a65771572d500264440626e4edf19102c237ca5523ba0673"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x24.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 62110,
+    "sha256": "b866be73a6c5b633e2dd691ad44a6ce0c1b646a852058758f934b555e6a5bc6f"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x25.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 37112,
+    "sha256": "5fdabecb7bf0ac384085daad100e73bad5ad7edc68d6d547c120d9813d36730e"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2/x26.webp",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 12400,
+    "sha256": "e69b9ae2d065956db402f5dc969c2042ada7ceba011bbef083911ddf407dc309"
+  },
+  {
+    "path": "web/public/papers/v-jepa-2.pdf",
+    "slug": "v-jepa-2",
+    "license": "CC-BY-4.0",
+    "bytes": 1069232,
+    "sha256": "067c15c7a3b0a05fc8232db49918c7dfaf2eb3938033bbb3ca4d3c0b08ff2400"
+  },
+  {
+    "path": "web/public/papers/robomemory/figure-1-overview.webp",
+    "slug": "robomemory",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 107952,
+    "sha256": "385a4fc603883b1bae4ea36ee5c16cfa5496670c09247627050879a1664d4fa2"
+  },
+  {
+    "path": "web/public/papers/robomemory/x2.webp",
+    "slug": "robomemory",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 76188,
+    "sha256": "5005e7edc7d182886cf71637cc18854fb4d42c2d46e259c42e3488371edf9f4c"
+  },
+  {
+    "path": "web/public/papers/robomemory/efficient.webp",
+    "slug": "robomemory",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 146180,
+    "sha256": "4b5a94c6b0c23fc3b32be82ece974853bd705e8d9e2552016d28c43fd73a37cd"
+  },
+  {
+    "path": "web/public/papers/robomemory/x3.webp",
+    "slug": "robomemory",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 54192,
+    "sha256": "4ae20ddca6361597ba67abfef694ab8ac4dad07dc2a29512e7d4a526611ea947"
+  },
+  {
+    "path": "web/public/papers/robomemory/x4.webp",
+    "slug": "robomemory",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 15882,
+    "sha256": "e7f6aacfe0a2fa18d05d50c571033f68a98b3d16f7308dc187ac2a3eb7f2d20c"
+  },
+  {
+    "path": "web/public/papers/robomemory/error_analysis_simple.webp",
+    "slug": "robomemory",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 435502,
+    "sha256": "cc3fddc3366b5a4c361b058d3788a2e13b4097dc5e9f61b068a7bee914c242a2"
+  },
+  {
+    "path": "web/public/papers/robomemory/spatial_memory_analysis.webp",
+    "slug": "robomemory",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 265838,
+    "sha256": "c415d8506dcd6ae0d691fe0085d06576abe2dd092a746e16085c5f0bf0b1f7b5"
+  },
+  {
+    "path": "web/public/papers/robomemory/x5.webp",
+    "slug": "robomemory",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 47996,
+    "sha256": "166e604b74bd9c5072a3aa29c17b137ce43dff2bf29c33db46bb6feacd1bfa1a"
+  },
+  {
+    "path": "web/public/papers/robomemory/x6.webp",
+    "slug": "robomemory",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 134632,
+    "sha256": "36fe2134e0c28fcfd6c66612d5b366ac7f33718b82ae1366098031e28b18da00"
+  },
+  {
+    "path": "web/public/papers/robomemory/x7.webp",
+    "slug": "robomemory",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 71908,
+    "sha256": "d99769d5ac6f0e21a1e080653ca2ee1d43a3a974a7307c0063115506cfbb1a85"
+  },
+  {
+    "path": "web/public/papers/robomemory/x8.webp",
+    "slug": "robomemory",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 75966,
+    "sha256": "924a5f11ebb19997030529af04a28a028aadc8a9309c6825b9bad08d05041557"
+  },
+  {
+    "path": "web/public/papers/robomemory/x9.webp",
+    "slug": "robomemory",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 59302,
+    "sha256": "5cb37958471257e4f22762d519ac28f0a8fe8fd4f47d8f097bc4a6aaeb68b1ae"
+  },
+  {
+    "path": "web/public/papers/robomemory/x10.webp",
+    "slug": "robomemory",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 54556,
+    "sha256": "fc7dbbe34ee952d34f52e56f00cd2e860027882dceccbaab27a9e691c768ccd6"
+  },
+  {
+    "path": "web/public/papers/robomemory.pdf",
+    "slug": "robomemory",
+    "license": "CC-BY-NC-SA-4.0",
+    "bytes": 600507,
+    "sha256": "d9a526440fc4ec4a00e33c9025259f3621a0bf06d49e3bc363471bf70c97048a"
+  },
+  {
+    "path": "web/public/papers/memoir/intro.png",
+    "slug": "memoir",
+    "license": "CC-BY-4.0",
+    "bytes": 539940,
+    "sha256": "104cb6ea15d69609b49b2808da1de82d7c94a421cfc48afce55a784ad0da8f2c"
+  },
+  {
+    "path": "web/public/papers/memoir/method.png",
+    "slug": "memoir",
+    "license": "CC-BY-4.0",
+    "bytes": 399017,
+    "sha256": "e3b68aae8c30ce0bac787c00931690821f0569511126e61856b7cd6ee24c72b1"
+  },
+  {
+    "path": "web/public/papers/memoir/case_study.png",
+    "slug": "memoir",
+    "license": "CC-BY-4.0",
+    "bytes": 1111279,
+    "sha256": "b4362267a12c54611b065daba6632686b508ffb1e0e983f6addc92626ca43bcc"
+  },
+  {
+    "path": "web/public/papers/memoir/obs_sr.png",
+    "slug": "memoir",
+    "license": "CC-BY-4.0",
+    "bytes": 282381,
+    "sha256": "6d60600a3a51c3ffd202511809c61425c42b29167cc39655ad2da04296037dec"
+  },
+  {
+    "path": "web/public/papers/memoir/nav_sr.png",
+    "slug": "memoir",
+    "license": "CC-BY-4.0",
+    "bytes": 234006,
+    "sha256": "a8657cd47afc3cc772f2f74bb7eb1750bb1e5c6556bd46444cc8653f213eb418"
+  },
+  {
+    "path": "web/public/papers/memoir/failure_cases.png",
+    "slug": "memoir",
+    "license": "CC-BY-4.0",
+    "bytes": 2072936,
+    "sha256": "54a037d3f968957b24b3e896d96f842ead97b22c7fc494c28bf73e10397885bb"
+  },
+  {
+    "path": "web/public/papers/memoir.pdf",
+    "slug": "memoir",
+    "license": "CC-BY-4.0",
+    "bytes": 6912855,
+    "sha256": "d274dd328788280f19f4be658af2f1ab6a74cc5037f9876242fdea82c99dc94a"
+  }
+]

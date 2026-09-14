@@ -1,4 +1,4 @@
-# Paper Reader
+# Paper Atlas · Paper Reader
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/Agent-Skill-6f42c1)](SKILL.md)
@@ -10,9 +10,54 @@ a source-grounded deep-reading report, and a verified web-library entry.
 它把“读 PDF、逐段翻译、精读论文、提取图表、写报告、放到前端”收敛成一个
 可重复执行的 Agent Skill。
 
-This repository contains the reusable **skill package**, not a hosted Paper
-Atlas website. It ships no private papers, user accounts, API keys, deployment
-credentials, or personal project configuration.
+This repository now includes the reusable **skill**, the **Paper Atlas web reader**,
+and source-grounded **reading reports**. It does not include private deployment
+configuration, user accounts, API keys, or build/dependency caches.
+
+中文：这是可开源维护的论文精读库，不再只是 Skill。先读
+[18 篇论文的报告目录](readings/README.md)，或运行 [web 阅读器](web/README.md)。
+
+## Run the reader
+
+```bash
+git clone https://github.com/sk-yan/paper-reader.git
+cd paper-reader/web
+npm ci
+npm run dev
+```
+
+Node.js 22.13 or newer is required; CI uses Node.js 24. The terminal prints the
+local address. `npm run build` and `npm start` build and serve the portable Node
+version. No ChatGPT Pro subscription, commercial model API, or original owner's
+hosting credentials are needed **to run the reader**. Producing new translations
+still requires an agent/model and source-extraction tools.
+
+### Manage without filling a Mac
+
+- Browse and edit reports directly under `readings/` on GitHub.
+- GitHub Actions validates commits; dependencies/build outputs stay on disposable
+  runners rather than being committed to the repository.
+- For full cloud editing, a GitHub Codespace is an option; check your account's
+  allowance and billing first. No Codespace is created automatically.
+- To install only the small skill, use a sparse clone as shown below instead of
+  downloading the bundled papers and images.
+- Website hosting and repository storage are separate. This change does not move
+  or make public the maintainer's existing private Site, and does not enable Pages.
+
+## Paper content is not all MIT
+
+The current collection has **18 original reading reports**. Six source versions
+permit redistribution under their recorded licenses, so their bilingual full text
+and figures are included. For the other twelve, the public reader contains the
+report and official source link, but no copied full text, full translation, PDF,
+or original figures. This means reuse permission has not been confirmed—not that
+the original paper is unavailable to read.
+
+Four full-text entries use CC BY 4.0. World-Ego and RoboMemory use
+**CC BY-NC-SA 4.0**: attribution, noncommercial use and share-alike apply to their
+source materials and adaptations. The software MIT license does not override them.
+See [content-licenses.json](content-licenses.json) and
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for per-paper sources and terms.
 
 ## What You Get
 
@@ -75,11 +120,12 @@ visual inspection happen before the agent claims completion.
 
 ### Codex App and Codex CLI
 
-Clone the repository into your Codex skills directory:
+Install just the skill without downloading the website's paper assets:
 
 ```bash
-git clone https://github.com/sk-yan/paper-reader.git \
+git clone --filter=blob:none --sparse https://github.com/sk-yan/paper-reader.git \
   ~/.codex/skills/paper-reader
+git -C ~/.codex/skills/paper-reader sparse-checkout set references scripts examples
 ```
 
 Restart Codex or begin a new task so the skill catalog refreshes.
@@ -179,8 +225,9 @@ flip action. Preserve existing marks when adding papers, and explain that
 browser-local storage does not synchronize between devices. Respect keyboard
 navigation and reduced-motion settings.
 
-This repository supplies the ingestion skill and integration contracts, not a
-standalone copy of a user's deployed website or private paper library.
+The bundled `web/` application demonstrates these behaviors. Its public content
+is filtered by source-license evidence; it is not a copy of private accounts or
+browser reading history.
 
 ## What's Inside
 
@@ -188,6 +235,15 @@ standalone copy of a user's deployed website or private paper library.
 
 - **`SKILL.md`** — Trigger phrases, end-to-end workflow, boundaries, and
   handoff requirements.
+
+### Reader and library
+
+- **`web/`** — Portable bilingual reader, topic shelves, image zoom, formula
+  rendering and device-local completion cards.
+- **`readings/`** — Markdown mentor reports and licensed bilingual companions.
+- **`content-licenses.json`** — Explicit source-version reuse decisions.
+- **`scripts/check-public-release.mjs`** — Fail-closed public content checks.
+- **`.github/workflows/ci.yml`** — Automatic tests, type checks and production build.
 
 ### Contracts
 
@@ -268,4 +324,5 @@ deployment credentials.
 
 ## License
 
-MIT License — see [LICENSE](LICENSE).
+Software and skill: MIT — see [LICENSE](LICENSE). Paper materials and adaptations:
+the per-paper licenses in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

@@ -1,0 +1,326 @@
+[
+  {
+    "slug": "openwam",
+    "source_url": "https://arxiv.org/abs/2609.07398v1",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_id": "CC-BY-4.0",
+    "decision": "include",
+    "note": "官方 arXiv 摘要页的 view license 指向 CC BY 4.0。可在履行署名、原文链接、许可链接、改动说明等条件后收录此版本的原文/PDF、作者拥有权利的图表及中文翻译。不得暗示作者认可本项目；不包括另有权利声明的第三方材料。",
+    "title": "OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining",
+    "authors": "Yuran Wang et al.",
+    "year": 2026,
+    "reviewed_at": "2026-09-14",
+    "content_paths": [
+      "web/app/data/papers/openwam/paper.ts",
+      "web/app/data/papers/openwam/report.ts",
+      "readings/openwam/"
+    ],
+    "report_license": "CC-BY-4.0"
+  },
+  {
+    "slug": "zetta",
+    "source_url": "https://arxiv.org/abs/2608.16590v1",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_id": "CC-BY-4.0",
+    "decision": "include",
+    "note": "官方 arXiv 摘要页的 view license 指向 CC BY 4.0。可在履行署名、原文链接、许可链接、改动说明等条件后收录此版本的原文/PDF、作者拥有权利的图表及中文翻译。不得暗示作者认可本项目；不包括另有权利声明的第三方材料。",
+    "title": "Zetta ζ: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence",
+    "authors": "Xin Ding et al.",
+    "year": 2026,
+    "reviewed_at": "2026-09-14",
+    "content_paths": [
+      "web/app/data/papers/zetta/paper.ts",
+      "web/app/data/papers/zetta/report.ts",
+      "readings/zetta/"
+    ],
+    "report_license": "CC-BY-4.0"
+  },
+  {
+    "slug": "worldevolver",
+    "source_url": "https://arxiv.org/abs/2606.30639v1",
+    "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "license_id": "LicenseRef-arXiv-nonexclusive-distrib-1.0",
+    "decision": "exclude",
+    "note": "官方 arXiv 摘要页的 view license 指向 arXiv 永久、非独占分发许可；它授权 arXiv 分发，不等于向本仓库授予转载或公开改编权。默认排除该论文全文、完整中文译文、PDF、TeX 和原图/原表资产；可保留书目信息、官方来源链接和经单独核查的原创精读文字。需权利人另行授权，或核实另一个明确允许该用途的版本，才能改变此决定。 已分别检查 v1 与最新 v2，二者均为此许可；“Findings of EMNLP 已录用”本身不改变当前 arXiv 源版本的复用授权。",
+    "title": "Self-Evolving World Models for LLM Agent Planning",
+    "authors": "Zhang et al.",
+    "year": 2026,
+    "reviewed_at": "2026-09-14",
+    "content_paths": [
+      "web/app/data/paper.ts",
+      "web/app/data/report.ts",
+      "readings/worldevolver/"
+    ],
+    "report_license": "CC-BY-4.0"
+  },
+  {
+    "slug": "world-ego-modeling",
+    "source_url": "https://arxiv.org/abs/2605.19957v1",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "license_id": "CC-BY-NC-SA-4.0",
+    "decision": "include",
+    "note": "官方 arXiv 摘要页的 view license 指向 CC BY-NC-SA 4.0。仅可在非商业使用、署名、保留原文与许可链接、说明翻译/裁切等改动，并让衍生材料继续采用 CC BY-NC-SA 4.0 的条件下收录。应对该论文目录单独标注许可，不能将全文、图表及译文统一改授 MIT/Apache-2.0，也不能移除 NC/SA 限制；若发布方案要求商业使用或统一宽松许可，则排除此材料。",
+    "title": "World-Ego Modeling for Long-Horizon Evolution in Hybrid Embodied Tasks",
+    "authors": "Lin et al.",
+    "year": 2026,
+    "reviewed_at": "2026-09-14",
+    "content_paths": [
+      "web/app/data/wem-paper.ts",
+      "web/app/data/wem-report.ts",
+      "readings/world-ego-modeling/"
+    ],
+    "report_license": "CC-BY-NC-SA-4.0"
+  },
+  {
+    "slug": "memrl",
+    "source_url": "https://arxiv.org/abs/2601.03192v2",
+    "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "license_id": "LicenseRef-arXiv-nonexclusive-distrib-1.0",
+    "decision": "exclude",
+    "note": "官方 arXiv 摘要页的 view license 指向 arXiv 永久、非独占分发许可；它授权 arXiv 分发，不等于向本仓库授予转载或公开改编权。默认排除该论文全文、完整中文译文、PDF、TeX 和原图/原表资产；可保留书目信息、官方来源链接和经单独核查的原创精读文字。需权利人另行授权，或核实另一个明确允许该用途的版本，才能改变此决定。 GitHub 上算法代码的开源许可不能自动覆盖论文全文或译文。",
+    "title": "MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory",
+    "authors": "Zhang et al.",
+    "year": 2026,
+    "reviewed_at": "2026-09-14",
+    "content_paths": [
+      "web/app/data/papers/memrl/paper.ts",
+      "web/app/data/papers/memrl/report.ts",
+      "readings/memrl/"
+    ],
+    "report_license": "CC-BY-4.0"
+  },
+  {
+    "slug": "rise",
+    "source_url": "https://arxiv.org/abs/2602.11075v2",
+    "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "license_id": "LicenseRef-arXiv-nonexclusive-distrib-1.0",
+    "decision": "exclude",
+    "note": "官方 arXiv 摘要页的 view license 指向 arXiv 永久、非独占分发许可；它授权 arXiv 分发，不等于向本仓库授予转载或公开改编权。默认排除该论文全文、完整中文译文、PDF、TeX 和原图/原表资产；可保留书目信息、官方来源链接和经单独核查的原创精读文字。需权利人另行授权，或核实另一个明确允许该用途的版本，才能改变此决定。 同时检查 RSS 2026 官方论文页 https://www.roboticsproceedings.org/rss22/p012.html，页面证实发表但未提供对本论文全文的明确开放改编许可。附录中 Apache/CC 数据集和模型许可仅针对使用的资产，不是论文本身许可。",
+    "title": "RISE: Self-Improving Robot Policy with Compositional World Models",
+    "authors": "Yang et al.",
+    "year": 2026,
+    "reviewed_at": "2026-09-14",
+    "content_paths": [
+      "web/app/data/papers/rise/paper.ts",
+      "web/app/data/papers/rise/report.ts",
+      "readings/rise/"
+    ],
+    "report_license": "CC-BY-4.0"
+  },
+  {
+    "slug": "v-jepa-2",
+    "source_url": "https://arxiv.org/abs/2506.09985v1",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_id": "CC-BY-4.0",
+    "decision": "include",
+    "note": "官方 arXiv 摘要页的 view license 指向 CC BY 4.0。可在履行署名、原文链接、许可链接、改动说明等条件后收录此版本的原文/PDF、作者拥有权利的图表及中文翻译。不得暗示作者认可本项目；不包括另有权利声明的第三方材料。 该结论针对论文，不延伸到模型权重、视频数据或代码的独立许可。",
+    "title": "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning",
+    "authors": "Assran et al.",
+    "year": 2025,
+    "reviewed_at": "2026-09-14",
+    "content_paths": [
+      "web/app/data/papers/v-jepa-2/paper.ts",
+      "web/app/data/papers/v-jepa-2/report.ts",
+      "readings/v-jepa-2/"
+    ],
+    "report_license": "CC-BY-4.0"
+  },
+  {
+    "slug": "robomemory",
+    "source_url": "https://arxiv.org/abs/2508.01415v7",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "license_id": "CC-BY-NC-SA-4.0",
+    "decision": "include",
+    "note": "官方 arXiv 摘要页的 view license 指向 CC BY-NC-SA 4.0。仅可在非商业使用、署名、保留原文与许可链接、说明翻译/裁切等改动，并让衍生材料继续采用 CC BY-NC-SA 4.0 的条件下收录。应对该论文目录单独标注许可，不能将全文、图表及译文统一改授 MIT/Apache-2.0，也不能移除 NC/SA 限制；若发布方案要求商业使用或统一宽松许可，则排除此材料。 当前读者使用的是 arXiv v7；不能拿较早会议版本的录用信息或未经核验的会议默认许可，覆盖此版本的 NC-SA 条款。",
+    "title": "RoboMemory: A Brain-inspired Multi-memory Agentic Framework for Interactive Environmental Learning in Physical Embodied Systems",
+    "authors": "Lei et al.",
+    "year": 2025,
+    "reviewed_at": "2026-09-14",
+    "content_paths": [
+      "web/app/data/papers/robomemory/paper.ts",
+      "web/app/data/papers/robomemory/report.ts",
+      "readings/robomemory/"
+    ],
+    "report_license": "CC-BY-NC-SA-4.0"
+  },
+  {
+    "slug": "himem-wam",
+    "source_url": "https://arxiv.org/abs/2606.10363v1",
+    "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "license_id": "LicenseRef-arXiv-nonexclusive-distrib-1.0",
+    "decision": "exclude",
+    "note": "官方 arXiv 摘要页的 view license 指向 arXiv 永久、非独占分发许可；它授权 arXiv 分发，不等于向本仓库授予转载或公开改编权。默认排除该论文全文、完整中文译文、PDF、TeX 和原图/原表资产；可保留书目信息、官方来源链接和经单独核查的原创精读文字。需权利人另行授权，或核实另一个明确允许该用途的版本，才能改变此决定。",
+    "title": "HiMem-WAM: Hierarchical Memory-Gated World Action Models for Robotic Manipulation",
+    "authors": "Sun et al.",
+    "year": 2026,
+    "reviewed_at": "2026-09-14",
+    "content_paths": [
+      "web/app/data/papers/himem-wam/paper.ts",
+      "web/app/data/papers/himem-wam/report.ts",
+      "readings/himem-wam/"
+    ],
+    "report_license": "CC-BY-4.0"
+  },
+  {
+    "slug": "robotwin-2",
+    "source_url": "https://arxiv.org/abs/2506.18088v2",
+    "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "license_id": "LicenseRef-arXiv-nonexclusive-distrib-1.0",
+    "decision": "exclude",
+    "note": "官方 arXiv 摘要页的 view license 指向 arXiv 永久、非独占分发许可；它授权 arXiv 分发，不等于向本仓库授予转载或公开改编权。默认排除该论文全文、完整中文译文、PDF、TeX 和原图/原表资产；可保留书目信息、官方来源链接和经单独核查的原创精读文字。需权利人另行授权，或核实另一个明确允许该用途的版本，才能改变此决定。 官方文档 https://robotwin-platform.github.io/doc/ 的代码/平台开放及会议信息，不构成对当前论文全文译本的授权。",
+    "title": "RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation",
+    "authors": "Chen et al.",
+    "year": 2025,
+    "reviewed_at": "2026-09-14",
+    "content_paths": [
+      "web/app/data/papers/robotwin-2/paper.ts",
+      "web/app/data/papers/robotwin-2/report.ts",
+      "readings/robotwin-2/"
+    ],
+    "report_license": "CC-BY-4.0"
+  },
+  {
+    "slug": "teach-and-grow",
+    "source_url": "https://arxiv.org/abs/2608.17209v1",
+    "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "license_id": "LicenseRef-arXiv-nonexclusive-distrib-1.0",
+    "decision": "exclude",
+    "note": "官方 arXiv 摘要页的 view license 指向 arXiv 永久、非独占分发许可；它授权 arXiv 分发，不等于向本仓库授予转载或公开改编权。默认排除该论文全文、完整中文译文、PDF、TeX 和原图/原表资产；可保留书目信息、官方来源链接和经单独核查的原创精读文字。需权利人另行授权，或核实另一个明确允许该用途的版本，才能改变此决定。",
+    "title": "Teach and Grow: An Agent-Centered Architecture for General Robot Learning",
+    "authors": "Nie et al.",
+    "year": 2026,
+    "reviewed_at": "2026-09-14",
+    "content_paths": [
+      "web/app/data/papers/teach-and-grow/paper.ts",
+      "web/app/data/papers/teach-and-grow/report.ts",
+      "readings/teach-and-grow/"
+    ],
+    "report_license": "CC-BY-4.0"
+  },
+  {
+    "slug": "retrieve-then-steer",
+    "source_url": "https://arxiv.org/abs/2605.10094v2",
+    "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "license_id": "LicenseRef-arXiv-nonexclusive-distrib-1.0",
+    "decision": "exclude",
+    "note": "官方 arXiv 摘要页的 view license 指向 arXiv 永久、非独占分发许可；它授权 arXiv 分发，不等于向本仓库授予转载或公开改编权。默认排除该论文全文、完整中文译文、PDF、TeX 和原图/原表资产；可保留书目信息、官方来源链接和经单独核查的原创精读文字。需权利人另行授权，或核实另一个明确允许该用途的版本，才能改变此决定。",
+    "title": "Retrieve-then-Steer: Online Success Memory for Test-Time Adaptation of Generative VLAs",
+    "authors": "Zhao et al.",
+    "year": 2026,
+    "reviewed_at": "2026-09-14",
+    "content_paths": [
+      "web/app/data/papers/retrieve-then-steer/paper.ts",
+      "web/app/data/papers/retrieve-then-steer/report.ts",
+      "readings/retrieve-then-steer/"
+    ],
+    "report_license": "CC-BY-4.0"
+  },
+  {
+    "slug": "memoir",
+    "source_url": "https://arxiv.org/abs/2510.08553v2",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_id": "CC-BY-4.0",
+    "decision": "include",
+    "note": "官方 arXiv 摘要页的 view license 指向 CC BY 4.0。可在履行署名、原文链接、许可链接、改动说明等条件后收录此版本的原文/PDF、作者拥有权利的图表及中文翻译。不得暗示作者认可本项目；不包括另有权利声明的第三方材料。 TPAMI 接收信息不应被当成限制该已获 CC BY 许可 arXiv 版本的理由；本决定不授予使用另有版权声明的 IEEE 排版版本的权利。",
+    "title": "Dream to Recall: Imagination-Guided Experience Retrieval for Memory-Persistent Vision-and-Language Navigation",
+    "authors": "Xu et al.",
+    "year": 2026,
+    "reviewed_at": "2026-09-14",
+    "content_paths": [
+      "web/app/data/papers/memoir/paper.ts",
+      "web/app/data/papers/memoir/report.ts",
+      "readings/memoir/"
+    ],
+    "report_license": "CC-BY-4.0"
+  },
+  {
+    "slug": "robo-cortex",
+    "source_url": "https://arxiv.org/abs/2605.18729v1",
+    "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "license_id": "LicenseRef-arXiv-nonexclusive-distrib-1.0",
+    "decision": "exclude",
+    "note": "官方 arXiv 摘要页的 view license 指向 arXiv 永久、非独占分发许可；它授权 arXiv 分发，不等于向本仓库授予转载或公开改编权。默认排除该论文全文、完整中文译文、PDF、TeX 和原图/原表资产；可保留书目信息、官方来源链接和经单独核查的原创精读文字。需权利人另行授权，或核实另一个明确允许该用途的版本，才能改变此决定。",
+    "title": "Robo-Cortex: A Self-Evolving Embodied Agent via Dual-Grain Cognitive Memory and Autonomous Knowledge Induction",
+    "authors": "Chan et al.",
+    "year": 2026,
+    "reviewed_at": "2026-09-14",
+    "content_paths": [
+      "web/app/data/papers/robo-cortex/paper.ts",
+      "web/app/data/papers/robo-cortex/report.ts",
+      "readings/robo-cortex/"
+    ],
+    "report_license": "CC-BY-4.0"
+  },
+  {
+    "slug": "onevomemory",
+    "source_url": "https://arxiv.org/abs/2608.08749v1",
+    "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "license_id": "LicenseRef-arXiv-nonexclusive-distrib-1.0",
+    "decision": "exclude",
+    "note": "官方 arXiv 摘要页的 view license 指向 arXiv 永久、非独占分发许可；它授权 arXiv 分发，不等于向本仓库授予转载或公开改编权。默认排除该论文全文、完整中文译文、PDF、TeX 和原图/原表资产；可保留书目信息、官方来源链接和经单独核查的原创精读文字。需权利人另行授权，或核实另一个明确允许该用途的版本，才能改变此决定。 Workshop 接收不等于开放全文改编授权。",
+    "title": "OnEvoMemory: Evolving Memory through Online Robot Rollouts for Pretrained Robot Policies",
+    "authors": "Chen and Zong",
+    "year": 2026,
+    "reviewed_at": "2026-09-14",
+    "content_paths": [
+      "web/app/data/papers/onevomemory/paper.ts",
+      "web/app/data/papers/onevomemory/report.ts",
+      "readings/onevomemory/"
+    ],
+    "report_license": "CC-BY-4.0"
+  },
+  {
+    "slug": "shaper",
+    "source_url": "https://arxiv.org/abs/2608.11350v1",
+    "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "license_id": "LicenseRef-arXiv-nonexclusive-distrib-1.0",
+    "decision": "exclude",
+    "note": "官方 arXiv 摘要页的 view license 指向 arXiv 永久、非独占分发许可；它授权 arXiv 分发，不等于向本仓库授予转载或公开改编权。默认排除该论文全文、完整中文译文、PDF、TeX 和原图/原表资产；可保留书目信息、官方来源链接和经单独核查的原创精读文字。需权利人另行授权，或核实另一个明确允许该用途的版本，才能改变此决定。 当前精读源为 v1；另查最新 v2，view license 同样为 arXiv 非独占分发许可。",
+    "title": "Self-Evolving Embodied Agents via Skill-Harness Evolution",
+    "authors": "Wang et al.",
+    "year": 2026,
+    "reviewed_at": "2026-09-14",
+    "content_paths": [
+      "web/app/data/papers/shaper/paper.ts",
+      "web/app/data/papers/shaper/report.ts",
+      "readings/shaper/"
+    ],
+    "report_license": "CC-BY-4.0"
+  },
+  {
+    "slug": "labevolver",
+    "source_url": "https://arxiv.org/abs/2607.27690v2",
+    "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "license_id": "LicenseRef-arXiv-nonexclusive-distrib-1.0",
+    "decision": "exclude",
+    "note": "官方 arXiv 摘要页的 view license 指向 arXiv 永久、非独占分发许可；它授权 arXiv 分发，不等于向本仓库授予转载或公开改编权。默认排除该论文全文、完整中文译文、PDF、TeX 和原图/原表资产；可保留书目信息、官方来源链接和经单独核查的原创精读文字。需权利人另行授权，或核实另一个明确允许该用途的版本，才能改变此决定。",
+    "title": "LabEvolver: Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents",
+    "authors": "Wang et al.",
+    "year": 2026,
+    "reviewed_at": "2026-09-14",
+    "content_paths": [
+      "web/app/data/papers/labevolver/paper.ts",
+      "web/app/data/papers/labevolver/report.ts",
+      "readings/labevolver/"
+    ],
+    "report_license": "CC-BY-4.0"
+  },
+  {
+    "slug": "wam-ttt",
+    "source_url": "https://arxiv.org/abs/2607.06988v2",
+    "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "license_id": "LicenseRef-arXiv-nonexclusive-distrib-1.0",
+    "decision": "exclude",
+    "note": "官方 arXiv 摘要页的 view license 指向 arXiv 永久、非独占分发许可；它授权 arXiv 分发，不等于向本仓库授予转载或公开改编权。默认排除该论文全文、完整中文译文、PDF、TeX 和原图/原表资产；可保留书目信息、官方来源链接和经单独核查的原创精读文字。需权利人另行授权，或核实另一个明确允许该用途的版本，才能改变此决定。",
+    "title": "WAM-TTT: Steering World-Action Models by Watching Human Play at Test Time",
+    "authors": "Feng et al.",
+    "year": 2026,
+    "reviewed_at": "2026-09-14",
+    "content_paths": [
+      "web/app/data/papers/wam-ttt/paper.ts",
+      "web/app/data/papers/wam-ttt/report.ts",
+      "readings/wam-ttt/"
+    ],
+    "report_license": "CC-BY-4.0"
+  }
+]

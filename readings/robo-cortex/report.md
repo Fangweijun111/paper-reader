@@ -1,0 +1,100 @@
+> 公开仓库仅提供原创精读分析与来源链接；未转载本文全文、完整译文、PDF或原始图表。该决定表示尚未确认再发布许可，并非论文不能公开阅读。[官方原文](https://arxiv.org/abs/2605.18729v1)。
+
+# 《Robo-Cortex: A Self-Evolving Embodied Agent via Dual-Grain Cognitive Memory and Autonomous Knowledge Induction》中文精读报告
+
+> 论文：Nga Teng Chan 等，*Robo-Cortex*，arXiv:2605.18729v1，2026。
+> 阅读约定：“论文事实”可由原文核对；“评价”为证据约束判断；“这是推断”为外推；不足处写“不确定”。
+
+## 1. 这篇论文一句话在做什么
+
+它让具身导航 Agent 用视频 world model 想象候选动作后果、用 VLM 选动作，并把 episode 内反思、跨 episode 原则和多轨迹启发式逐层积累，以改善 IGNav、主动识别和具身问答（Figure 1、Section 3）。
+
+## 2. 背景从 0 讲起
+
+导航 Agent 在局部可观测环境中既要移动，又要为识别/问答主动找证据。地图、轨迹 memory 保存“见过什么”，反思 Agent 保存“哪里错了”，world-model planning 比较“动作后可能看到什么”。作者认为它们仍缺少把多次经历抽象成可迁移策略，称为 experiential amnesia（Sections 1–2）。
+
+## 3. 论文的问题定义
+
+输入当前观察 $o_t$、目标 $g$、候选动作/推理、短时与长期记忆、启发式库；输出一个离散导航决策和更新的 memory graph/heuristic。IGNav/AEQA 在 HM3D，AR 在 MP3D，均用 Habitat-sim。动作是前进 0.20m 或左右转 22.5°。Qwen2.5-VL-72B-Instruct-AWQ 负责规划/分析/AKI，Wan2.1-I2V-A14B-480P-Diffusers 负责想象；测试分静态 frozen heuristic 与在线更新 Robo-Cortex++（Section 4.1）。
+
+## 4. 方法总览
+
+1. 生成候选计划 $p_t^{(i)}$；2. subtask distributor 对齐目标；3. world model 生成未来视觉；4. VLM evaluator 打分并执行最佳候选；5. 当前 episode 的 SRM 滑窗总结局部进展/失败；6. episode 后 LPM 抽取成功/失败原则；7. AKI 聚类多轨迹启发式并合并置信；8. 后续规划检索这些知识。
+
+流程：`观察+目标→候选→未来视频想象→VLM 验证→执行→SRM→轨迹图→LPM→AKI heuristic→下一 episode`。
+
+## 5. 核心机制精读
+
+- Imagine-then-Verify：world model 给每候选生成短未来，VLM 按目标选；论文没有单独移除想象模块的消融，无法由现有实验确认它的独立收益。
+- SRM：最近 $w$ 个 subtask 的 episode 内摘要，避免重复无效动作；Round 1 在 IGNav 36.11→40.18、AEQA 25.55→30.83（Table 2）。
+- LPM：episode 后沿时间图抽取成功指导或失败警告，并优先保留短成功轨迹；Round 3 收益大于 Round 2，但没有同一基线随轮次的完整对照。
+- AKI：把 heuristic $h=(\rho,d,a,c,y)$ 按 pattern/语义聚类，合成跨 episode 策略；它比某条 LPM 原则更抽象。
+
+## 6. 公式/算法逐行解释
+
+Eqs. 1–4：候选 $p_t^{(i)}=(a_t^{(i)},r_t^{(i)})$ 含动作与理由；$\mathcal D$ 转成语义 subtask；$\mathcal W(o_t,\mathcal S_t^{(i)})$ 预测后续 $h$ 个时间步的观测；选择对目标 $g$ 得分最高候选。Eqs. 5–8：memory graph 节点分 root/trajectory/subtask；SRM 窗口 $W_t$ 经 $f_{srm}$ 得摘要；LPM 从第 $i$ 个 subtask 向后取 $k$ 步轨迹。Eqs. 9–10：heuristic 保存 pattern id、问题描述、建议动作、置信和结果，cluster merger 输出泛化描述/策略/聚合置信。
+
+## 7. 实验部分精读
+
+指标：IGNav 报 SR/SPL/平均轨迹；AR 报 SR/轨迹；AEQA 报 Answer Score/SPL/轨迹。Baselines 为 MapGPT、WMNav、World-In-World。静态 Robo-Cortex 报 IGNav 41.26 SR/31.66 SPL、AR 22.39 SR、AEQA 29.78；Robo-Cortex++ 为 45.07、23.88、30.59，并报 AEQA SPL 25.57（Table 1、Section 4.2）。
+
+Table 2 的“memory accumulation study”有三轮：Basic 只在 Round 1，LPM 只在 Rounds 2–3；Full 在 Round 3 的 IGNav/AR/AEQA 为 44.29/24.03/31.71。由于每轮方法不完整，且正文未报告 episode 数、seed、方差或检验，它只能描述性展示轮次相关上升，不能把差值可靠归因于 memory accumulation。
+
+Table 3 unseen transfer 中 transferred heuristic 使 IGNav 34.72→48.61 SR、24.03→39.33 SPL；但加 continued update 后反降到 41.67/34.84。AR、AEQA 也并非每项单调。**评价**：最大 +15.30 SPL 是挑选的 IGNav 差值，不能概括所有任务。
+
+用户另有“72 episodes/split、全线 $p>0.05$、由矢量图反推数据”的外部审计说法；这不是论文正文披露，当前报告不能独立确认，需把重建表和统计脚本作为单独证据附件后再引用。
+
+## 8. 训练和推理成本分析
+
+论文运行本地 72B VLM 的多个 vLLM 服务和 14B 视频扩散 world model，显存与推理成本高；没有报告 GPU 数、显存、token、wall time。模型是否为论文中进一步训练不清楚；主要更新是文本/图结构 memory 与 heuristic，而不是在线微调 backbone。你有 8×A100 80GB，量级上可部署量化 72B 与 14B，但 Habitat 多实例、vLLM 并发和视频生成吞吐仍需实测。
+
+## 9. 这篇论文真正的贡献
+
+作者声称 AKI、双粒度 memory 和 imagine-verify 统一。站得住的是从 episode memory 到跨 episode heuristic 的层级设计，以及 static/adaptive 名义区分。工程组合是 Qwen-VL、Wan 视频模型、memory graph、反思 prompt 和 Habitat。Reviewer 会重点质疑 Table 2/3 缺 seed/统计、轮次对照不匹配、在线更新常反降、world-model 想象是否优于直接 VLM、真实机器人只有 preliminary 证据。
+
+## 10. 和相关论文的关系
+
+RAG：检索原则进 prompt；TTA：Robo-Cortex++ 非参数在线更新；RL：无梯度 reward 优化；world model：这里确实用视频生成模型预测候选视觉后果，但论文未披露针对这些导航任务重新训练世界模型，也未验证预测校准；agent planning：VLM 候选—想象—评分闭环；self-evolving：heuristic 库跨 episode 更新。与 World-In-World/WMNav 相比，强调经验抽象而非单 episode world-model/map planning；与 Voyager 相比，存的是导航启发式而非可执行代码技能。
+
+## 11. 我应该怎么复现一个最小版本
+
+选 Habitat IGNav，一个 Qwen-VL 与较小 I2V；存 graph node、SRM summary、LPM principle、heuristic cluster 和 provenance。固定同一 episode order，比较 Basic、+SRM、+LPM、+AKI、Full，至少 3 seeds；每轮所有条件都跑同一 episodes。日志包括候选、生成视频、评分、动作、memory 写入、token/延迟、SR/SPL。最小表必须报告置信区间与 online update 的负收益。
+
+## 12. 如果我要基于它做新论文
+
+以下五项是研究提案。
+
+### 方向 1：受控 memory accumulation
+补齐每轮 matched baseline、多 seed 与 permutation；风险是成本大。
+### 方向 2：world-model fidelity gate
+先校准想象与真实转移，不可靠时绕过视频；风险是需要真实 counterfactual。
+### 方向 3：启发式因果归因
+逐条启用/禁用 heuristic 测边际贡献；风险是组合爆炸。
+### 方向 4：负迁移检测与回滚
+若 online update 降低 held-out 表现自动回滚；风险是需额外验证集。
+### 方向 5：操作域迁移
+把导航 heuristic 换成抓取/接触 recovery 合约，在 RoboTwin/LIBERO 测；风险是语言原则难落到连续控制。
+
+## 13. 阅读检查题与参考答案
+
+### 题 1：三层经验是什么？
+**答案**：SRM 局部反思、LPM 轨迹原则、AKI 跨轨迹启发式。
+### 题 2：world model 做什么？
+**答案**：为候选动作生成短期未来视觉供 VLM 评分。
+### 题 3：动作空间？
+**答案**：前进 0.20m、左右转 22.5°。
+### 题 4：三个 benchmark？
+**答案**：IGNav、AR、AEQA。
+### 题 5：static 与 ++ 区别？
+**答案**：评测时 heuristic 固定或继续在线更新。
+### 题 6：Table 2 最大问题？
+**答案**：轮次方法不对齐且无 seed/方差/显著性。
+### 题 7：Table 3 是否单调？
+**答案**：否，transfer+update 常低于 transfer only。
+### 题 8：+15.30 表示什么？
+**答案**：IGNav unseen SPL 的单项差值，不是全任务平均。
+### 题 9：它是真 world model 吗？
+**答案**：用视频模型做未来想象，但没有证明其学习/校准成可靠动力学模型。
+### 题 10：复现首要修正？
+**答案**：同 episode、同轮次、同预算、全条件、多 seed 的 matched 对照。
+

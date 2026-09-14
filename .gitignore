@@ -7,3 +7,12 @@ node_modules/
 dist/
 work/
 *.log
+.vinext/
+.wrangler/
+out/
+coverage/
+.env*
+*.tsbuildinfo
+next-env.d.ts
+*.tar.gz
+*.zip
