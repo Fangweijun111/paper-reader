@@ -2,12 +2,15 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const licenses=read('content-licenses.json');
 const assets=read('public-asset-manifest.json');
 const bySlug=new Map(licenses.map(r=>[r.slug,r]));
 const errors=[];
+const tracked=execFileSync('git',['-C',root,'ls-files','-z'],{encoding:'utf8'}).split('\0').filter(Boolean);
+for(const p of tracked)if(/(^|\/)(node_modules|dist|\.openai|\.wrangler|\.vinext)(\/|$)/.test(p))errors.push('Tracked runtime/cache path: '+p);
 if(bySlug.size!==licenses.length)errors.push('Duplicate paper license record');
 for(const r of licenses){
   const full=r.decision==='include';
