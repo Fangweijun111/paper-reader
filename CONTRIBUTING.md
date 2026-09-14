@@ -36,10 +36,11 @@ files to Trash has already returned disk space.
 
 ## Publishing versus hosting
 
-Pushing this repository publishes its source, not a hosted reader website.
-The included CI validates the project but intentionally does not deploy it.
-Use an explicitly selected hosting provider and check the audience before a new
-site is published. Reading marks currently remain browser-local.
+The source repository lives on github.com; the public reader lives at
+https://sk-yan.github.io/paper-reader/. Main-branch application/content changes
+run Pages tests and static-export checks before automatic deployment. Documentation
+changes do not need to rebuild the website. The original private Site stays separate.
+Reading marks remain browser-local and do not automatically migrate between origins.
 
 ## Copyright and academic integrity
 

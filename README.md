@@ -1,5 +1,10 @@
 # Paper Atlas · Paper Reader
 
+## [打开精读库前端 →](https://sk-yan.github.io/paper-reader/)
+
+直接在浏览器阅读，无需下载代码、安装依赖或启动本地服务。
+[世界模型书架](https://sk-yan.github.io/paper-reader/collections/world-models/) · [OpenWAM 精读](https://sk-yan.github.io/paper-reader/papers/openwam/)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/Agent-Skill-6f42c1)](SKILL.md)
 
@@ -15,7 +20,8 @@ and source-grounded **reading reports**. It does not include private deployment
 configuration, user accounts, API keys, or build/dependency caches.
 
 中文：这是可开源维护的论文精读库，不再只是 Skill。先读
-[18 篇论文的报告目录](readings/README.md)，或运行 [web 阅读器](web/README.md)。
+[在线精读库](https://sk-yan.github.io/paper-reader/)，也可以查看
+[18 篇报告的 Markdown](readings/README.md) 或 [web 源码说明](web/README.md)。
 
 ## Run the reader
 
@@ -41,8 +47,8 @@ still requires an agent/model and source-extraction tools.
   allowance and billing first. No Codespace is created automatically.
 - To install only the small skill, use a sparse clone as shown below instead of
   downloading the bundled papers and images.
-- Website hosting and repository storage are separate. This change does not move
-  or make public the maintainer's existing private Site, and does not enable Pages.
+- The public frontend is deployed automatically to GitHub Pages after its static
+  export passes all checks. The maintainer's original private Site is unchanged.
 
 ## Paper content is not all MIT
 

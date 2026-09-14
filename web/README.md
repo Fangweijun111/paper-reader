@@ -1,5 +1,9 @@
 # Paper Atlas 阅读器
 
+## [直接打开精读库 →](https://sk-yan.github.io/paper-reader/)
+
+日常阅读只需打开上面的网页。以下命令仅供开发者，不需要在自己的Mac安装这些依赖才能阅读。
+
 完整前端源码，可独立运行；不需要原维护者的 Sites、Cloudflare 或 ChatGPT 登录配置。
 
 ```bash
@@ -7,7 +11,9 @@ npm ci
 npm run dev
 ```
 
-打开终端打印的地址。生产构建使用 `npm run build`，构建后用 `npm start` 启动 Node 服务。本项目未启用 GitHub Pages，也不改变维护者已有的私人网站。
+打开终端打印的地址。`npm run build` 和 `npm start` 仍提供Node版本；公开前端由GitHub Actions自动静态导出并发布到GitHub Pages，不改变维护者已有的私人网站。
+
+Pages构建使用 `PAPER_ATLAS_STATIC_EXPORT=1` 和 `NEXT_PUBLIC_BASE_PATH=/paper-reader`，运行 `npm run build:pages` 后验证 `dist/client`。锁定的vinext0.0.50预渲染请求遗漏basePath，构建脚本应用一个版本与代码形状均受检查的兼容补丁；升级vinext时须重新审核或移除补丁。不要把`dist/server`上传到Pages。
 
 ## 内容结构
 

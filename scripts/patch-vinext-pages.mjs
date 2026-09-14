@@ -4,11 +4,10 @@
 // Prefix internal render requests, but keep output files at the artifact root.
 import fs from 'node:fs';
 import path from 'node:path';
-import {createRequire} from 'node:module';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const require=createRequire(path.join(root,'web/package.json'));
-const dist=path.dirname(require.resolve('vinext'));
+// npm ci installs this pinned ESM-only package here; its require export is absent.
+const dist=path.join(fs.realpathSync(path.join(root,'web/node_modules/vinext')),'dist');
 const version=JSON.parse(fs.readFileSync(path.join(dist,'../package.json'),'utf8')).version;
 if(version!=='0.0.50')throw Error('Review or remove the static-export workaround before changing vinext version.');
 const file=path.join(dist,'build/prerender.js');

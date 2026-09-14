@@ -2,6 +2,14 @@ name: Publish Paper Atlas frontend
 on:
   push:
     branches: [main]
+    paths:
+      - web/**
+      - content-licenses.json
+      - public-asset-manifest.json
+      - scripts/check-public-release.mjs
+      - scripts/check-pages-export.mjs
+      - scripts/patch-vinext-pages.mjs
+      - .github/workflows/pages.yml
   workflow_dispatch:
 permissions:
   contents: read
