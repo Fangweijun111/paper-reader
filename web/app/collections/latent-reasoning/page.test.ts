@@ -10,6 +10,8 @@ describe("Latent Reasoning shelf", () => {
     expect(shelf).toContain("这个主题还没有论文");
     expect(shelf).toContain("添加第一篇论文");
     expect(shelf).toContain("<CreatePaperDialog collection={collection}");
+    expect(shelf).toContain("data-watermark={collection.titleEn");
+    expect(readFileSync("app/globals.css", "utf8")).toContain("content: attr(data-watermark)");
     expect(shelf).not.toContain('href="/papers/worldevolver"');
   });
 });

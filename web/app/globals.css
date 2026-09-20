@@ -2234,7 +2234,7 @@ kbd {
 
 .library-hero--collection::before {
   color: rgb(49 90 157 / 4%);
-  content: "WORLD";
+  content: attr(data-watermark);
 }
 
 .library-hero--collection .library-hero__copy h1 {

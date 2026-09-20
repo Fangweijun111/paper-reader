@@ -291,7 +291,7 @@ export function PaperLibraryApp({
         </nav>
       </header>
 
-      <section className="library-hero library-hero--collection">
+      <section className="library-hero library-hero--collection" data-watermark={collection.titleEn.split(" ")[0].toUpperCase()}>
         <div className="library-hero__copy">
           <Link className="library-back-link" href={backHref}>
             ← 返回主题导航
