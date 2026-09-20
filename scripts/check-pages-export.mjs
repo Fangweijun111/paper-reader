@@ -5,7 +5,10 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const output=path.join(root,'web/dist/client');
 const papers=JSON.parse(fs.readFileSync(path.join(root,'content-licenses.json'),'utf8'));
 const prefix='/paper-reader';
-const routes=['/','/collections/world-models/',...papers.map(p=>`/papers/${p.slug}/`)];
+const collectionRoutes=fs.readdirSync(path.join(root,'web/app/collections'),{withFileTypes:true})
+  .filter(entry=>entry.isDirectory()&&fs.existsSync(path.join(root,'web/app/collections',entry.name,'page.tsx')))
+  .map(entry=>`/collections/${entry.name}/`);
+const routes=['/',...collectionRoutes,...papers.map(p=>`/papers/${p.slug}/`)];
 const errors=[];
 for(const route of routes){
   const file=path.join(output,route.slice(1),'index.html');

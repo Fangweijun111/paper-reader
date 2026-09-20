@@ -10,5 +10,7 @@ describe("shared create-paper dialog", () => {
 
     expect(source).toContain("所属主题");
     expect(source).toContain("uncategorized");
+    expect(source).toContain("collection.slug");
+    expect(source).toContain("clipboard.writeText(prompt)");
   });
 });

@@ -237,6 +237,10 @@ export function PaperLibraryApp({
   }, []);
 
   const counts = useMemo(() => countPapersByStatus(papers), [papers]);
+  const latestPaper = useMemo(
+    () => [...papers].filter(paper => paper.href).sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))[0],
+    [papers],
+  );
   const domains = useMemo(
     () => Array.from(new Set(papers.flatMap((paper) => paper.domains))),
     [papers],
@@ -280,7 +284,7 @@ export function PaperLibraryApp({
         <nav aria-label="论文库导航">
           <Link href={backHref}>主题导航</Link>
           <a href="#library">本专题论文</a>
-          <Link href="/papers/worldevolver">最近精读</Link>
+          {latestPaper?.href ? <Link href={latestPaper.href}>最近精读</Link> : null}
           <button onClick={() => setIsCreateOpen(true)} type="button">
             ＋ 创建新论文
           </button>
@@ -412,11 +416,13 @@ export function PaperLibraryApp({
         ) : (
           <div className="library-empty">
             <span aria-hidden="true">∅</span>
-            <h3>没有符合条件的论文</h3>
-            <p>换一个关键词，或者清除当前筛选条件。</p>
-            <button onClick={clearFilters} type="button">
-              清除筛选
-            </button>
+            <h3>{papers.length ? "没有符合条件的论文" : "这个主题还没有论文"}</h3>
+            <p>{papers.length ? "换一个关键词，或者清除当前筛选条件。" : `把第一篇 ${collection.titleEn} 论文带回聊天，完成精读后会出现在这里。`}</p>
+            {papers.length ? (
+              <button onClick={clearFilters} type="button">清除筛选</button>
+            ) : (
+              <button onClick={() => setIsCreateOpen(true)} type="button">添加第一篇论文</button>
+            )}
           </div>
         )}
       </section>
@@ -427,7 +433,7 @@ export function PaperLibraryApp({
       </footer>
 
       {isCreateOpen ? (
-        <CreatePaperDialog onClose={() => setIsCreateOpen(false)} />
+        <CreatePaperDialog collection={collection} onClose={() => setIsCreateOpen(false)} />
       ) : null}
     </main>
   );

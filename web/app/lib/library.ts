@@ -28,6 +28,7 @@ export type PaperCollection = {
   eyebrow: string;
   accent: "cobalt" | "vermilion" | "moss" | "ochre";
   order: number;
+  showWhenEmpty?: boolean;
 };
 
 export type LibraryPaper = {

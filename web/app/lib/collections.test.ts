@@ -20,7 +20,7 @@ describe("paper collections", () => {
     expect(papersForCollection(libraryPapers, "missing-topic")).toEqual([]);
   });
 
-  it("omits empty collections and derives count and latest update", () => {
+  it("keeps explicitly opened empty topics but omits incidental empty collections", () => {
     const summaries = summarizeNonEmptyCollections(
       [
         ...paperCollections,
@@ -37,7 +37,12 @@ describe("paper collections", () => {
       libraryPapers,
     );
 
-    expect(summaries.map((item) => item.slug)).toEqual(["world-models"]);
+    expect(summaries.map((item) => item.slug)).toEqual(["world-models", "latent-reasoning"]);
+    expect(summaries[1]).toMatchObject({
+      paperCount: 0, latestUpdate: "", href: "/collections/latent-reasoning",
+      titleEn: "Latent Reasoning", showWhenEmpty: true,
+    });
+    expect(papersForCollection(libraryPapers, "latent-reasoning")).toEqual([]);
     expect(summaries[0]).toMatchObject({
       paperCount: 18,
       latestUpdate: "2026-09-14",

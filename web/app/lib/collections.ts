@@ -33,6 +33,7 @@ export function summarizeNonEmptyCollections(
         href: `/collections/${collection.slug}`,
       };
     })
-    .filter((collection) => collection.paperCount > 0)
+    // Explicitly opened topics are visible even before their first paper arrives.
+    .filter((collection) => collection.paperCount > 0 || collection.showWhenEmpty)
     .sort((left, right) => left.order - right.order);
 }

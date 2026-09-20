@@ -115,7 +115,7 @@ export function CollectionLandingApp({
               </div>
               <footer className="collection-card__meta">
                 <span>{collection.paperCount} 篇论文</span>
-                <span>更新于 {collection.latestUpdate}</span>
+                <span>{collection.latestUpdate ? `更新于 ${collection.latestUpdate}` : "等待第一篇论文"}</span>
                 <strong>
                   进入书架 <i aria-hidden="true">↗</i>
                 </strong>

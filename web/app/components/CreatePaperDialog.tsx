@@ -5,7 +5,13 @@ import { useEffect, useState } from "react";
 export const CREATE_PAPER_PROMPT =
   "请把这篇 PDF 加入论文精读库，并明确登记所属主题；如果无法判断，使用 uncategorized，不要默认放入世界模型。先登记为‘精读中’，完成中英对照和 13 章精读报告后发布，并把状态更新为‘已完成’。";
 
-export function CreatePaperDialog({ onClose }: { onClose: () => void }) {
+export function CreatePaperDialog({ onClose, collection }: {
+  onClose: () => void;
+  collection?: { slug: string; titleEn: string; titleZh: string };
+}) {
+  const prompt = collection
+    ? `所属主题：${collection.titleEn}（${collection.titleZh}），collection: ${collection.slug}。\n${CREATE_PAPER_PROMPT}`
+    : CREATE_PAPER_PROMPT;
   const [copyState, setCopyState] = useState<"idle" | "copied" | "failed">(
     "idle",
   );
@@ -20,7 +26,7 @@ export function CreatePaperDialog({ onClose }: { onClose: () => void }) {
 
   const copyPrompt = async () => {
     try {
-      await navigator.clipboard.writeText(CREATE_PAPER_PROMPT);
+      await navigator.clipboard.writeText(prompt);
       setCopyState("copied");
     } catch {
       setCopyState("failed");
@@ -79,7 +85,7 @@ export function CreatePaperDialog({ onClose }: { onClose: () => void }) {
 
         <div className="create-paper-prompt">
           <span>复制给 Codex</span>
-          <p>{CREATE_PAPER_PROMPT}</p>
+          <p>{prompt}</p>
           <button onClick={copyPrompt} type="button">
             {copyState === "copied"
               ? "已复制 ✓"
